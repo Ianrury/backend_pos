@@ -1,16 +1,40 @@
 pada ini silah jalankan dahulu 
 npm install
 
-BACKEND
+📦 BACKEND
 📌 Fitur Backend
-CRUD Customer (GET, POST, PUT, DELETE)
+✅ CRUD Customer (GET, POST, PUT, DELETE)
 
-Join transactions untuk menampilkan:
+🔗 Join dengan transactions untuk menampilkan data tambahan:
 
-Total Orders
+🧾 Total Orders (jumlah transaksi)
 
-Total Spent
+💰 Total Spent (total pengeluaran)
 
-Join Date (dari created_at)
+📅 Join Date (diambil dari created_at)
 
-Alamat lengkap (address, country
+📍 Alamat lengkap (address, country)
+
+
+| Method | Endpoint             | Deskripsi                              |
+| ------ | -------------------- | -------------------------------------- |
+| GET    | `/api/customers`     | Ambil semua customer + total transaksi |
+| POST   | `/api/customers`     | Tambah customer baru                   |
+| PUT    | `/api/customers/:id` | Edit customer berdasarkan ID           |
+| DELETE | `/api/customers/:id` | Hapus customer berdasarkan ID          |
+
+
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@email.com",
+    "phone": "+62 812-3456-7890",
+    "address": "Jakarta, Indonesia",
+    "level": "Premium",
+    "joinDate": "2024-01-15",
+    "totalOrders": 15,
+    "totalSpent": 2500000
+  }
+]
+
