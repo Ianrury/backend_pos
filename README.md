@@ -1,5 +1,4 @@
-pada ini silah jalankan dahulu 
-npm install
+silahkan jalan kan dahulu npm run dev dan kemudian npm run dev
 
 📦 BACKEND
 📌 Fitur Backend
